@@ -43,10 +43,10 @@ function GameServer() {
 
     // Config
     this.config = { // Border - Right: X increases, Down: Y increases (as of 2015-05-20)
-        serverMaxConnections: 64, // Maximum amount of connections to the server.
+        serverMaxConnections: 2, // Maximum amount of connections to the server.
         serverPort: 443, // Server port
         serverGamemode: 0, // Gamemode, 0 = FFA, 1 = Teams
-        serverBots: 0, // Amount of player bots to spawn
+        serverBots: 10, // Amount of player bots to spawn
         serverViewBaseX: 1024, // Base view distance of players. Warning: high values may cause lag
         serverViewBaseY: 592,
         serverStatsPort: 88, // Port for stats server. Having a negative number will disable the stats server.
@@ -57,9 +57,9 @@ function GameServer() {
         borderTop: 0, // Top border of map (Vanilla value: 0)
         borderBottom: 6000, // Bottom border of map (Vanilla value: 11180.3398875)
         spawnInterval: 20, // The interval between each food cell spawn in ticks (1 tick = 50 ms)
-        foodSpawnAmount: 10, // The amount of food to spawn per interval
-        foodStartAmount: 100, // The starting amount of food in the map
-        foodMaxAmount: 500, // Maximum food cells on the map
+        foodSpawnAmount: 10000, // The amount of food to spawn per interval
+        foodStartAmount: 100000, // The starting amount of food in the map
+        foodMaxAmount: 5000, // Maximum food cells on the map
         foodMass: 1, // Starting food size (In mass)
         virusMinAmount: 10, // Minimum amount of viruses on the map.
         virusMaxAmount: 50, // Maximum amount of viruses on the map. If this amount is reached, then ejected cells will pass through viruses.
